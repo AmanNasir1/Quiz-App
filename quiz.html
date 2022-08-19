@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body onload="showquiz()">
+    <div id="con" class="con">
+        <div id="timer" class="timer">
+            <h2 id="min">30</h2><span id="sp1">:</span>
+            <h2 id="sec">60</h2>
+
+        </div>
+        <div class="main1">
+        <div id="question" class="question">
+
+        </div>
+        <label class="label" for="a">
+            <input class="value" type="radio" name="options" id="a">
+        <div class="opt" id="op1"></div>
+    </label>
+    <label class="label" for="b">
+        <input class="value" type="radio" name="options" id="b">
+        <div class="opt" id="op2"></div>
+    </label>
+    <label class="label" for="c">
+        <input class="value" type="radio" name="options" id="c">
+        <div class="opt" id="op3"></div>
+    </label>
+    <label class="label" for="d">
+        <input class="value" type="radio" name="options" id="d">
+        <div class="opt" id="op4"></div>
+    </label>
+    
+    <div class="btn">
+        <button onclick="nextquestion()">Next</button>
+    </div>
+</div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+
+</html>
